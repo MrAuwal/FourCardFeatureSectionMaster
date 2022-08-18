@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'arial';
+}
+
+/*CONTAINER*/
+.container{
+	margin: 30px auto;
+	width: 95%;
+	padding: 10px;
+	
+}
+
+/*THE HEADER OF THE CONTAINER */
+.header{
+	text-align: center;
+}
+.header .head1{
+	font-size: 35px;
+	font-weight: 200;
+	opacity: .5;
+}
+.header .head2{
+	font-size: 35px;
+	font-weight: 600;
+	opacity: .7;
+	margin-bottom: 20px;
+}
+.header p{
+	font-size: 15px;
+	font-weight: 200;
+	opacity: .7;
+	margin-bottom: 10px;
+	text-align: center;
+	
+}
+/*THE BOXES STYLE THAT DISPLAY FLEX DERECTION*/
+.boxes{
+	display: flex;
+	padding: 20px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	
+}
+.boxes .box{
+	position: relative;
+	background: white;
+	border-radius: 5px;
+	margin: 20px;
+	box-shadow: 0 8px 10px 5px rgba(0, 0, 0, 0.2);
+	padding: 20px 30px;
+	flex-basis: 30%;
+	height: 250px;
+}
+
+.boxes-cl{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 30%; 
+	
+}
+
+/*SVG STYLE SECTION*/
+.box img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*BOXS PARAGRAPH STYLE AND H4 STYLE*/
+.box p{
+	font-size: 15px;
+	font-family: 'arial';
+	margin-bottom: 10px;
+	opacity: .7;
+}
+.box h4{
+	font-size: 17px;
+	font-family: 'arial';
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+/*THIS IS COLOR STYLE OF THE TOP OF BOXES*/
+.boxes #box1{
+	border-top: 5px solid hsl(180, 62%, 55%);
+}
+.boxes #box2{
+	border-top: 5px solid hsl(0, 78%, 62%);
+}
+.boxes #box3{
+	border-top: 5px solid hsl(34, 97%, 64%);
+}
+.boxes #box4{
+	border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+/*THIS IS FOOTER LINK STYLE */
+.attribution { 
+	font-size: 15px; 
+	text-align: center; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+/*THIS IS A MEDIA QUERY FOR RESPONSIVE DESIGN*/
+
+@media(max-width: 800px){
+	.boxes {
+		display: block;
+	}
+	.header .head1{
+		font-size: 25px;
+
+	}
+	.header .head2{
+		font-size: 25px;
+
+	}
+}
