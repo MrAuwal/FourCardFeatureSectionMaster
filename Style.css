@@ -58,12 +58,7 @@ body{
 	height: 250px;
 }
 
-.boxes-cl{
-	display: flex;
-	flex-direction: column;
-	flex-basis: 30%; 
-	
-}
+
 
 /*SVG STYLE SECTION*/
 .box img{
